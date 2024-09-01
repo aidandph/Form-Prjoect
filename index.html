@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>
+        Forms
+    </h1>
+    <h2>
+        Form Elements
+    </h2>
+    <section>
+    <table border="1">
+        <thead class="elements">
+            <th>Elements</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody class="elementsb">
+            <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>Text Area</td>
+                <td>The textarea element is used when creating a text-box for multi-line input (e.g. a comment section). The element supports the rows and cols attributes which determine the height and width, respectively, of the element.</td>
+            </tr>
+            <tr>
+                <td>&lt;Form&gt;</td>
+                <td>Form</td>
+                <td>The HTML form element is used to collect and send information to an external source.
+                    Forms can contain various input elements. When a user submits the form, information in these input elements is passed to the source which is named in the action attribute of the form.</td>
+            </tr>
+            <tr>
+                <td>&lt;Input&gt;</td>
+                <td>Input</td>
+                <td>The HTML input element is used to render a variety of input fields on a webpage including text fields, checkboxes, buttons, etc. input element have a type attribute that determines how it gets rendered to a page.</td>
+            </tr>
+            <tr>
+                <td>&lt;Select&gt;</td>
+                <td>Select</td>
+                <td>The HTML &lt;Select&gt; element can be used to create a dropdown list. A list of choices for the dropdown list can be created using one or more  elements. By default, only one &lt;option&gt; can be selected at a time.</td>
+            </tr>
+            <tr>
+                <td>&lt;Datalist&gt;</td>
+                <td>Datalist</td>
+                <td>When using an HTML input, a basic search/autocomplete functionality can be achieved by pairing an &lt;input&gt; with a &lt;Datalist&gt;. To pair a &lt;input&gt; with a &lt;Datalist&gt; the &lt;input&gt;’s list value must match the value of the id of the &lt;Datalist&gt;. The datalist element is used to store a list of &lt;option&gt;s.</td>
+            </tr>
+            <tr>
+                <td>&lt;Label&gt;</td>
+                <td>Label</td>
+                <td>The HTML &lt;Label&gt; element provides identification for a specific &lt;Label&gt; based on matching values of the &lt;Label&gt;‘s id attribute and the &lt;Label&gt;‘s for attribute. By default, clicking on the &lt;Label&gt; will focus the field of the related &lt;Label&gt;.</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    <section>  
+        <h2>Form Input Types</h2>
+        <table border="1">
+            <thead>
+                <tr class="types">
+                    <th>Input Types</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody class="typesb">
+                <tr>
+                    <td>&lt;input type="checkbox"&gt;</td>
+                    <td>Input type: Checkbox</td>
+                    <td>When using an HTML input element, the type="checkbox" attribute will render a single checkbox item. To create a group of checkboxes related to the same topic, they should all use the same name attribute. Since it’s a checkbox, multiple checkboxes can be selected for the same topic.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="number"&gt;</td>
+                    <td>Input type: Number</td>
+                    <td>HTML input elements can be of type number. These input fields allow the user to enter only numbers and a few special characters inside the field.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="range"&gt;</td>
+                    <td>Input type: range</td>
+                    <td>A slider can be created by using the type="range" attribute on an HTML input element. The range slider will act as a selector between a minimum and a maximum value. These values are set using the min and max attributes respectively. The slider can be adjusted to move in different steps or increments using the step attribute.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="text"&gt;</td>
+                    <td>Input type: Text</td>
+                    <td>HTML &lt;Input&gt; elements can support text input by setting the attribute type="text". This renders a single row input field that users can type text inside.The value of the &lt;Input&gt;‘s name and value attribute of the element are sent as a key-value pair when the form is submitted.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="radio"&gt;</td>
+                    <td>Input type: radio</td>
+                    <td>HTML &lt;Input&gt; elements can be given a type="radio" attribute that renders a single radio button. Multiple radio buttons of a related topic are given the same name attribute value. Only a single option can be chosen from a group of radio buttons.The value of the selected/checked &lt;Input&gt;’s name and value attribute of this element are sent as a key-value pair when the form is submitted.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="password"&gt;</td>
+                    <td>Input type=password</td>
+                    <td>The HTML &lt;Input&gt; element can have the attribute type="password" that renders a single row input field which allows the user to type censored text inside the field. It is used to type in sensitive information.The value of this &lt;Input&gt;’s name and value (actual value and not the censored version) attribute of this element are sent as a key-value pair when the form is submitted.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Form Attributes</h2>
+        <table border="1">
+            <thead>
+                <tr class="attributes">
+                    <th>Attributes</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody class="attributesb">
+                <tr >
+                    <td>&lt;input name=&gt;</td>
+                    <td>Input name</td>
+                    <td>In order for a form to send data, it needs to be able to put it into key-value pairs. This is achieved by setting the name attribute of the input element. The name will become the key and the value of the input will become the value the form submits corresponding to the key.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type=number max=20 required&gt;</td>
+                    <td>Required</td>
+                    <td>In HTML, input fields have an attribute called required which specifies that the field must include a value.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type=number max=20&gt;</td>#
+                    <td>Max</td>
+                    <td>In HTML, input fields with type number have an attribute called min that specifies the minimum value that can be entered into the field. The code block provided shows an input number field that accepts a number with minimum value 1.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type=number max=20&gt;</td>
+                    <td>Max</td>
+                    <td>HTML &lt;Input&gt;s of type number have an attribute called max that specifies the maximum value for the input field.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type=number name=tweet minlength=10&gt;</td>
+                    <td>Min Length</td>
+                    <td>In HTML, an input field of type text has an attribute that supports minimum length validation. To check that the input text has a minimum length, add the minlength attribute with the character count.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type=number name=tweet maxlength=140&gt;</td>
+                    <td>Maxlength</td>
+                    <td>In HTML, input fields with type text have an attribute called maxlength that specifies the maximum number of characters that can be entered into the field. The code block shows an input text field that accepts text that has a maximum length of 140 characters.</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type=number name=tweet pattern=[A-Za-z]{3}&gt;</td>
+                    <td>Pattern</td>
+                    <td>In a text input element, the pattern attribute uses a regular expression to match against (or validate) the value of the &lt;input&gt;, when the form is submitted.</td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

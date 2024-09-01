@@ -1,0 +1,21 @@
+body{
+    background-color: ;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color: rgb(103, 44, 158);
+    text-align: center;
+    text-transform: uppercase;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.elements, .types, .attributes{
+    background-color: rgb(103, 44, 158);
+    color: white;
+}
+
+.elementsb, .typesb, .attributesb{
+    background-color: rgb(138, 95, 177);
+}
